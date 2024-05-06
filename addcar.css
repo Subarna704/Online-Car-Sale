@@ -1,0 +1,214 @@
+/* styles.css */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+    padding: 0;
+  }
+  
+  .back{
+    background-image: url("images/car1.jpg");
+    height: 780px;
+    background-position: 100%;
+    background-size: cover;
+    animation: slide 2s ease forwards;
+    
+}
+
+.layer{
+    height: 100%;
+    background-color: rgba(9, 17, 36, 0.5);
+}
+
+.nav{
+    display: flex;
+    padding-left: 40px;
+    padding-top: 10px;
+    
+    
+}
+.logo{
+    background-image: url(images/logo.jpg);
+    height: 70px;
+    width: 80px;
+    background-size: cover;
+    border: 2px solid white;
+    border-radius: 50%;
+    opacity: 0;
+    animation: slide 2s ease forwards;
+   
+}
+
+.name{
+    width:25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gold;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slide 2s ease forwards;
+ 
+}
+
+.links{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.links a{
+    text-decoration: none;
+    margin:0px 10px 0px 30px;
+    color: gold;
+   
+    font-weight: 900;
+    border-right: 2px solid rgb(18, 19, 18);
+    padding-right: 10px;
+    animation: nav 2s  ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    
+}
+.links a i{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.links a:hover{
+    font-size: 21px;
+    color: aqua;
+    font-weight: 600;
+}
+
+.links a i:hover{
+     font-size: 30px;
+}
+  .container {
+    color: rgb(250, 250, 250);
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 20px 20px 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: rgba(23, 21, 21, 0.5);
+    padding-right: 10px;
+    opacity: 0;
+    animation: form 1s 2s ease forwards;
+
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin: 20px 50px 20px 10px;
+  }
+
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px 10px;
+    
+    border-radius: 5px;
+    background-color: rgba(254, 254, 254, 0.8);
+    outline: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+    margin-left: 10%;
+ 
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .display{
+    color: rgb(253, 252, 250);
+   
+    text-align: center;
+    border: 2px solid black;
+    position:relative;
+    left:10px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    background-color: rgba(2,2,2,0.5);
+    margin-top: 20px;
+   margin-bottom: 50px;
+   list-style:lower-latin;
+   opacity: 0;
+    animation: display 3s 2s ease forwards;
+    
+  }
+  
+  
+
+  
+  @keyframes slide{
+    0% {
+        transform: translateX(-60px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes nav{
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes form{
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes display{
+  0% {
+      transform: translateY(-800px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+  
+  /* Responsive styles */
+  @media screen and (max-width: 600px) {
+    .form-group {
+      margin-bottom: 10px;
+    }
+  }
+  

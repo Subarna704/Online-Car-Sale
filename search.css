@@ -1,0 +1,188 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.back{
+  background-image: url("images/car1.jpg");
+  background-size: fill;
+  animation: slide 2s ease forwards;
+  
+}
+
+.layer{
+  height: 100%;
+  background-color: rgba(9, 17, 36, 0.5);
+}
+
+.nav{
+  display: flex;
+  padding-left: 40px;
+  padding-top: 10px;
+  
+  
+}
+.logo{
+  background-image: url(images/logo.jpg);
+  height: 70px;
+  width: 80px;
+  background-size: cover;
+  border: 2px solid white;
+  border-radius: 50%;
+  opacity: 0;
+  animation: slide 2s ease forwards;
+ 
+}
+
+.name{
+  width:25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gold;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 0;
+  animation: slide 2s ease forwards;
+
+}
+
+.links{
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+
+.links a{
+  text-decoration: none;
+  margin:0px 10px 0px 30px;
+  color: gold;
+ 
+  font-weight: 900;
+  border-right: 2px solid rgb(18, 19, 18);
+  padding-right: 10px;
+  animation: nav 2s  ease forwards;
+  animation-delay: calc(.2s * var(--i));
+  
+}
+.links a i{
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.links a:hover{
+  font-size: 21px;
+  color: aqua;
+  font-weight: 600;
+}
+
+.links a i:hover{
+   font-size: 30px;
+}
+
+.container {
+  max-width: 800px;
+  margin-left: 150px;
+  margin-top: 50px;
+  padding: 40px;
+  background-color: rgba(23, 21, 21, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  opacity: 0;
+  animation: form 2s 2s ease forwards;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+.search-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 200px;
+  padding: 10px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.car-item {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.car-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
+
+.car-info {
+  margin-top: 10px;
+}
+@keyframes slide{
+  0% {
+      transform: translateX(-60px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes nav{
+  0% {
+      transform: translateY(-100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes form{
+  0% {
+      transform: translateY(100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+

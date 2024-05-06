@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Search</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="search.css">
+</head>
+<body>
+    <div class="back">
+        <div class="layer">
+          <div class="nav">
+            <div class="logo">
+      
+            </div>
+            <div class="name">Crown's Car Sale</div>
+            <div class="links">
+            <a href="index.html"  style="--i:1"><i class="fa-solid fa-house"></i></a>
+            
+            <a href="aboutus.html"  style="--i:2">About us</a>
+            
+           
+        </div>
+        </div>
+<div class="container">
+  <h1>Searech your car!</h1>
+  <div class="search-container">
+    <input type="text" id="modelInput" placeholder="Enter car model...">
+    <input type="text" id="locationInput" placeholder="Enter location...">
+    <button onclick="searchCars()">Search</button>
+  </div>
+  <div id="carList" class="car-list">
+    
+  </div>
+</div>
+</div>
+</div>
+
+
+<script src="search.js"></script>
+</body>
+</html>
